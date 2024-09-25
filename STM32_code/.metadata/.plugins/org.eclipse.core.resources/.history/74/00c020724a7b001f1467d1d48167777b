@@ -187,7 +187,7 @@ HAL_TIM_Base_Start_IT(&htim2);
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-setTimer1(50);
+setTimer1(100);
 setTimer2(100);
 int count1=0;
 int count2=9;
@@ -203,7 +203,7 @@ int state=0;
 			  display7SEG(count1);
 			  count1++;
 			  state=1;
-			  setTimer1(50);
+			  setTimer1(100);
 
 		  break;
 		  case 1:
@@ -213,7 +213,7 @@ int state=0;
 			  display7SEG(count2);
 			  count2--;
 			  state=0;
-			  setTimer1(50);
+			  setTimer1(100);
 			  break;
 		  default:
 			  break;
