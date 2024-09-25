@@ -612,3 +612,49 @@ Finished building: STM32_Lab2.bin
  
 Finished building: STM32_Lab2.list
  
+21:32:04 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:194:5: warning: unused variable 'state' [-Wunused-variable]
+  194 | int state=0;
+      |     ^~~~~
+../Core/Src/main.c:193:5: warning: unused variable 'count2' [-Wunused-variable]
+  193 | int count2=9;
+      |     ^~~~~~
+../Core/Src/main.c:192:5: warning: unused variable 'count1' [-Wunused-variable]
+  192 | int count1=0;
+      |     ^~~~~~
+../Core/Src/main.c: In function 'HAL_TIM_PeriodElapsedCallback':
+../Core/Src/main.c:326:12: error: 'state' undeclared (first use in this function)
+  326 |     switch(state){
+      |            ^~~~~
+../Core/Src/main.c:326:12: note: each undeclared identifier is reported only once for each function it appears in
+../Core/Src/main.c:328:9: error: 'count1' undeclared (first use in this function)
+  328 |      if(count1>9)count1=0;
+      |         ^~~~~~
+../Core/Src/main.c:338:9: error: 'count2' undeclared (first use in this function)
+  338 |      if(count2<0)count2=9;
+      |         ^~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+21:32:24 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8004	     24	   1664	   9692	   25dc	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
