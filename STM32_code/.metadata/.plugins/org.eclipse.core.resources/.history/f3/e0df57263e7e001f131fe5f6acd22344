@@ -244,7 +244,7 @@ HAL_TIM_Base_Start_IT(&htim2);
   /* USER CODE BEGIN WHILE */
 setTimer1(100);
 setTimer2(100);
-int hour = 15 , minute = 9 , second = 50;
+int hour = 15 , minute = 8 , second = 50;
   while (1)
   {
 	  second ++;

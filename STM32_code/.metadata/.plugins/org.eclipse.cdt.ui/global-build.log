@@ -1024,3 +1024,170 @@ Finished building: STM32_Lab2.bin
  
 Finished building: STM32_Lab2.list
  
+15:16:39 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:180:1: warning: return type defaults to 'int' [-Wimplicit-int]
+  180 | updateClockBuffer (int hour,int minute) {
+      | ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'updateClockBuffer':
+../Core/Src/main.c:192:3: error: break statement not within loop or switch
+  192 |   break;
+      |   ^~~~~
+../Core/Src/main.c:199:3: error: break statement not within loop or switch
+  199 |   break;
+      |   ^~~~~
+../Core/Src/main.c:206:3: error: break statement not within loop or switch
+  206 |   break;
+      |   ^~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:257:4: error: too few arguments to function 'updateClockBuffer'
+  257 |    updateClockBuffer () ;
+      |    ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:180:1: note: declared here
+  180 | updateClockBuffer (int hour,int minute) {
+      | ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'updateClockBuffer':
+../Core/Src/main.c:208:1: warning: control reaches end of non-void function [-Wreturn-type]
+  208 | }
+      | ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:17:01 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c:180:2: warning: return type defaults to 'int' [-Wimplicit-int]
+  180 |  updateClockBuffer (int hour,int minute) {
+      |  ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:254:4: error: too few arguments to function 'updateClockBuffer'
+  254 |    updateClockBuffer () ;
+      |    ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:180:2: note: declared here
+  180 |  updateClockBuffer (int hour,int minute) {
+      |  ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c: In function 'updateClockBuffer':
+../Core/Src/main.c:205:1: warning: control reaches end of non-void function [-Wreturn-type]
+  205 | }
+      | ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:17:30 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'main':
+../Core/Src/main.c:254:4: error: too few arguments to function 'updateClockBuffer'
+  254 |    updateClockBuffer () ;
+      |    ^~~~~~~~~~~~~~~~~
+../Core/Src/main.c:180:6: note: declared here
+  180 | void updateClockBuffer (int hour,int minute) {
+      |      ^~~~~~~~~~~~~~~~~
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+15:18:10 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8740	     36	   1668	  10444	   28cc	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
+15:22:44 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8384	     36	   1660	  10080	   2760	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
+15:24:15 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-size   STM32_Lab2.elf 
+   text	   data	    bss	    dec	    hex	filename
+   8384	     36	   1660	  10080	   2760	STM32_Lab2.elf
+Finished building: default.size.stdout
+ 
+15:26:27 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8740	     36	   1668	  10444	   28cc	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
+15:37:34 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8692	     36	   1668	  10396	   289c	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+Finished building: STM32_Lab2.list
+ 
+ 
+ 
+15:38:07 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   8692	     36	   1668	  10396	   289c	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+Finished building: STM32_Lab2.list
+ 
+ 

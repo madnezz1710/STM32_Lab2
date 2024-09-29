@@ -197,18 +197,26 @@ void updateClockBuffer (int hour,int minute) {
 	if(hour<10){
 			led_buffer[0]=0;
 			led_buffer[1]=hour;
+			update7SEG(0);
+			update7SEG(1);
 	}
 	else if((hour>=10)){
 		led_buffer[0]=hour/10;
 		led_buffer[1]=hour%10;
+		update7SEG(0);
+		update7SEG(1);
 	}
 	if(minute<10){
 		led_buffer[2]=0;
 		led_buffer[3]=minute;
+		update7SEG(2);
+		update7SEG(3);
 	}
 	else if(minute>=10){
 		led_buffer[2]=minute/10;
 		led_buffer[3]=minute%10;
+		update7SEG(2);
+		update7SEG(3);
 	}
 }
 int main(void)
@@ -244,7 +252,7 @@ HAL_TIM_Base_Start_IT(&htim2);
   /* USER CODE BEGIN WHILE */
 setTimer1(100);
 setTimer2(100);
-int hour = 15 , minute = 9 , second = 50;
+int hour = 15 , minute = 8 , second = 50;
   while (1)
   {
 	  second ++;
@@ -398,12 +406,15 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	  if(timer1_flag==1){
 		  switch(state){
 		  case 0:
+
 			  update7SEG(index_led);
 			  index_led=1;
 			  state=1;
 			  setTimer1(100);
+
 		  break;
 		  case 1:
+
 			  update7SEG(index_led);
 			  index_led=2;
 			  state=2;
@@ -412,18 +423,21 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 		  default:
 			  break;
 		  case 2:
+
 			  update7SEG(index_led);
 			  index_led=3;
 			  state=3;
 			  setTimer1(100);
 			  break;
 		  case 3:
+
 			  update7SEG(index_led);
 			  index_led=0;
 			  state=0;
 			  setTimer1(100);
 			  break;
 	  }
+
 	  }
 	  if(timer2_flag==1){
 		  setTimer2(100);
