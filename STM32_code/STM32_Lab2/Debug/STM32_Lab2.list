@@ -602,8 +602,8 @@ HAL_TIM_Base_Start_IT(&htim2);
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-setTimer1(50);
- 80004e2:	2032      	movs	r0, #50	; 0x32
+setTimer1(100);
+ 80004e2:	2064      	movs	r0, #100	; 0x64
  80004e4:	f000 f9b6 	bl	8000854 <setTimer1>
 setTimer2(100);
  80004e8:	2064      	movs	r0, #100	; 0x64
@@ -982,8 +982,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
  800071c:	4b46      	ldr	r3, [pc, #280]	; (8000838 <HAL_TIM_PeriodElapsedCallback+0x18c>)
  800071e:	2201      	movs	r2, #1
  8000720:	601a      	str	r2, [r3, #0]
-			  setTimer1(50);
- 8000722:	2032      	movs	r0, #50	; 0x32
+			  setTimer1(100);
+ 8000722:	2064      	movs	r0, #100	; 0x64
  8000724:	f000 f896 	bl	8000854 <setTimer1>
 
 		  break;
@@ -1022,8 +1022,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
  8000766:	4b34      	ldr	r3, [pc, #208]	; (8000838 <HAL_TIM_PeriodElapsedCallback+0x18c>)
  8000768:	2202      	movs	r2, #2
  800076a:	601a      	str	r2, [r3, #0]
-			  setTimer1(50);
- 800076c:	2032      	movs	r0, #50	; 0x32
+			  setTimer1(100);
+ 800076c:	2064      	movs	r0, #100	; 0x64
  800076e:	f000 f871 	bl	8000854 <setTimer1>
 			  break;
  8000772:	e04c      	b.n	800080e <HAL_TIM_PeriodElapsedCallback+0x162>
@@ -1063,8 +1063,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
  80007b0:	4b21      	ldr	r3, [pc, #132]	; (8000838 <HAL_TIM_PeriodElapsedCallback+0x18c>)
  80007b2:	2203      	movs	r2, #3
  80007b4:	601a      	str	r2, [r3, #0]
-			  setTimer1(50);
- 80007b6:	2032      	movs	r0, #50	; 0x32
+			  setTimer1(100);
+ 80007b6:	2064      	movs	r0, #100	; 0x64
  80007b8:	f000 f84c 	bl	8000854 <setTimer1>
 			  break;
  80007bc:	e027      	b.n	800080e <HAL_TIM_PeriodElapsedCallback+0x162>
@@ -1102,8 +1102,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
  80007fa:	4b0f      	ldr	r3, [pc, #60]	; (8000838 <HAL_TIM_PeriodElapsedCallback+0x18c>)
  80007fc:	2200      	movs	r2, #0
  80007fe:	601a      	str	r2, [r3, #0]
-			  setTimer1(50);
- 8000800:	2032      	movs	r0, #50	; 0x32
+			  setTimer1(100);
+ 8000800:	2064      	movs	r0, #100	; 0x64
  8000802:	f000 f827 	bl	8000854 <setTimer1>
 			  break;
  8000806:	e002      	b.n	800080e <HAL_TIM_PeriodElapsedCallback+0x162>
