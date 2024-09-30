@@ -2289,3 +2289,9 @@
 2024-09-29 21:56:14,014 [INFO] IPUIPlugin:74 - create IPUIPlugin
 2024-09-29 21:56:14,014 [INFO] IPUIPlugin:74 - create IPUIPlugin
 2024-09-29 21:56:14,101 [INFO] OpenFileManager:333 - Restore cursor
+2024-09-30 15:19:04,150 [INFO] Activator:177 - 
+
+
+2024-09-30 15:19:04,152 [INFO] Activator:178 - !SESSION log4j initialized
+2024-09-30 15:19:37,091 [INFO] RetryExec:97 - I/O exception (org.apache.http.NoHttpResponseException) caught when processing request to {s}->https://sw-center.st.com:443: The target server failed to respond
+2024-09-30 15:19:37,093 [INFO] RetryExec:113 - Retrying request to {s}->https://sw-center.st.com:443
