@@ -19,10 +19,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "software_timer.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "software_timer.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -56,13 +56,6 @@ static void MX_TIM2_Init(void);
 
 /* Private user code ---------------------------------------------------------*/
 /* USER CODE BEGIN 0 */
-
-/* USER CODE END 0 */
-
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
 void display7SEG(int num){
   	if(num==0){
   		HAL_GPIO_WritePin(SEG0_GPIO_Port, SEG0_Pin,0);
@@ -211,6 +204,13 @@ void updateClockBuffer (int hour,int minute) {
 		led_buffer[3]=minute%10;
 	}
 }
+/* USER CODE END 0 */
+
+/**
+  * @brief  The application entry point.
+  * @retval int
+  */
+
 int main(void)
 {
   /* USER CODE BEGIN 1 */
@@ -242,7 +242,7 @@ HAL_TIM_Base_Start_IT(&htim2);
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-setTimer1(100);
+setTimer1(25);
 setTimer2(100);
 int hour = 15 , minute = 9 , second = 50;
   while (1)
@@ -401,13 +401,13 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 			  update7SEG(index_led);
 			  index_led=1;
 			  state=1;
-			  setTimer1(100);
+			  setTimer1(25);
 		  break;
 		  case 1:
 			  update7SEG(index_led);
 			  index_led=2;
 			  state=2;
-			  setTimer1(100);
+			  setTimer1(25);
 			  break;
 		  default:
 			  break;
@@ -415,13 +415,13 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 			  update7SEG(index_led);
 			  index_led=3;
 			  state=3;
-			  setTimer1(100);
+			  setTimer1(25);
 			  break;
 		  case 3:
 			  update7SEG(index_led);
 			  index_led=0;
 			  state=0;
-			  setTimer1(100);
+			  setTimer1(25);
 			  break;
 	  }
 	  }

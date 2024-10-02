@@ -37,13 +37,13 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING, OCTETS
  16 .debug_macro  000162bb  00000000  00000000  0002af58  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 17 .debug_line   000095ae  00000000  00000000  00041213  2**0
+ 17 .debug_line   000095ad  00000000  00000000  00041213  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 18 .debug_str    00082025  00000000  00000000  0004a7c1  2**0
+ 18 .debug_str    00082025  00000000  00000000  0004a7c0  2**0
                   CONTENTS, READONLY, DEBUGGING, OCTETS
- 19 .comment      00000053  00000000  00000000  000cc7e6  2**0
+ 19 .comment      00000053  00000000  00000000  000cc7e5  2**0
                   CONTENTS, READONLY
- 20 .debug_frame  000026dc  00000000  00000000  000cc83c  2**2
+ 20 .debug_frame  000026dc  00000000  00000000  000cc838  2**2
                   CONTENTS, READONLY, DEBUGGING, OCTETS
 
 Disassembly of section .text:
@@ -78,10 +78,10 @@ Disassembly of section .text:
 
 0800014c <display7SEG>:
 
-/**
-  * @brief  The application entry point.
-  * @retval int
-  */
+/* USER CODE END PFP */
+
+/* Private user code ---------------------------------------------------------*/
+/* USER CODE BEGIN 0 */
 void display7SEG(int num){
  800014c:	b580      	push	{r7, lr}
  800014e:	b082      	sub	sp, #8
@@ -752,6 +752,10 @@ void updateClockBuffer (int hour,int minute) {
  8000624:	66666667 	.word	0x66666667
 
 08000628 <main>:
+  * @brief  The application entry point.
+  * @retval int
+  */
+
 int main(void)
 {
  8000628:	b580      	push	{r7, lr}
@@ -788,8 +792,8 @@ HAL_TIM_Base_Start_IT(&htim2);
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-setTimer1(100);
- 8000644:	2064      	movs	r0, #100	; 0x64
+setTimer1(25);
+ 8000644:	2019      	movs	r0, #25
  8000646:	f000 f983 	bl	8000950 <setTimer1>
 setTimer2(100);
  800064a:	2064      	movs	r0, #100	; 0x64
@@ -1200,8 +1204,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
  800089c:	4b25      	ldr	r3, [pc, #148]	; (8000934 <HAL_TIM_PeriodElapsedCallback+0xd8>)
  800089e:	2201      	movs	r2, #1
  80008a0:	601a      	str	r2, [r3, #0]
-			  setTimer1(100);
- 80008a2:	2064      	movs	r0, #100	; 0x64
+			  setTimer1(25);
+ 80008a2:	2019      	movs	r0, #25
  80008a4:	f000 f854 	bl	8000950 <setTimer1>
 		  break;
  80008a8:	e02f      	b.n	800090a <HAL_TIM_PeriodElapsedCallback+0xae>
@@ -1219,8 +1223,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
  80008ba:	4b1e      	ldr	r3, [pc, #120]	; (8000934 <HAL_TIM_PeriodElapsedCallback+0xd8>)
  80008bc:	2202      	movs	r2, #2
  80008be:	601a      	str	r2, [r3, #0]
-			  setTimer1(100);
- 80008c0:	2064      	movs	r0, #100	; 0x64
+			  setTimer1(25);
+ 80008c0:	2019      	movs	r0, #25
  80008c2:	f000 f845 	bl	8000950 <setTimer1>
 			  break;
  80008c6:	e020      	b.n	800090a <HAL_TIM_PeriodElapsedCallback+0xae>
@@ -1240,8 +1244,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
  80008d8:	4b16      	ldr	r3, [pc, #88]	; (8000934 <HAL_TIM_PeriodElapsedCallback+0xd8>)
  80008da:	2203      	movs	r2, #3
  80008dc:	601a      	str	r2, [r3, #0]
-			  setTimer1(100);
- 80008de:	2064      	movs	r0, #100	; 0x64
+			  setTimer1(25);
+ 80008de:	2019      	movs	r0, #25
  80008e0:	f000 f836 	bl	8000950 <setTimer1>
 			  break;
  80008e4:	e011      	b.n	800090a <HAL_TIM_PeriodElapsedCallback+0xae>
@@ -1259,8 +1263,8 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
  80008f6:	4b0f      	ldr	r3, [pc, #60]	; (8000934 <HAL_TIM_PeriodElapsedCallback+0xd8>)
  80008f8:	2200      	movs	r2, #0
  80008fa:	601a      	str	r2, [r3, #0]
-			  setTimer1(100);
- 80008fc:	2064      	movs	r0, #100	; 0x64
+			  setTimer1(25);
+ 80008fc:	2019      	movs	r0, #25
  80008fe:	f000 f827 	bl	8000950 <setTimer1>
 			  break;
  8000902:	e002      	b.n	800090a <HAL_TIM_PeriodElapsedCallback+0xae>
