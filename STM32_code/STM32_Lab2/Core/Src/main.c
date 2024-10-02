@@ -258,7 +258,7 @@ setTimer1(25);
 setTimer2(100);
 setTimer0(20);
 int state=0;
-int hour = 15 , minute = 59 , second = 50;
+int hour = 15 , minute = 8 , second = 50;
   while (1)
   {
 	  if(timer0_flag==1){

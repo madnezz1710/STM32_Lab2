@@ -867,10 +867,10 @@ setTimer0(20);
 int state=0;
  80006be:	2300      	movs	r3, #0
  80006c0:	60fb      	str	r3, [r7, #12]
-int hour = 15 , minute = 59 , second = 50;
+int hour = 15 , minute = 8 , second = 50;
  80006c2:	230f      	movs	r3, #15
  80006c4:	60bb      	str	r3, [r7, #8]
- 80006c6:	233b      	movs	r3, #59	; 0x3b
+ 80006c6:	2308      	movs	r3, #8
  80006c8:	607b      	str	r3, [r7, #4]
  80006ca:	2332      	movs	r3, #50	; 0x32
  80006cc:	603b      	str	r3, [r7, #0]
