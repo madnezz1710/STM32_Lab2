@@ -220,7 +220,7 @@ int TIMER0_CYCLE=10;
 const int MAX_LED_MATRIX=8;
 int index_led_matrix=0;
 uint8_t matrix_buffer[8]={0b11100111,0b11011011,0b10111101,0b10000001,0b10000001,0b10111101,0b10111101,0b10111101};
-uint8_t shifted=0;
+int shifted=0;
 void setCol(uint8_t value){
 	HAL_GPIO_WritePin(ENM0_GPIO_Port, ENM0_Pin, (value>>7)&0x01);
 	HAL_GPIO_WritePin(ENM1_GPIO_Port, ENM1_Pin, (value>>6)&0x01);
@@ -254,9 +254,9 @@ void clearCol(){
 	HAL_GPIO_WritePin(ENM6_GPIO_Port, ENM6_Pin, RESET);
 	HAL_GPIO_WritePin(ENM7_GPIO_Port, ENM7_Pin, RESET);
 }
-void updateLEDMatrix(int index,uint8_t shifted){
+void updateLEDMatrix(int index){
 	clearRow();
-	uint8_t	animation_matrix_buffer =(matrix_buffer[index]<<(8-shifted)) | (matrix_buffer[index]>>shifted);
+	uint8_t	animation_matrix_buffer =(matrix_buffer[index]>>shifted||matrix_buffer[index]<<(8-shifted));
 	switch(index){
 	case 0:
 		setCol(animation_matrix_buffer);
@@ -387,11 +387,11 @@ int count =0;
 	  	  }
 	  	  }
 	  	  if(timer2_flag==1){
-	  		  updateLEDMatrix(count,shifted);
+	  		  updateLEDMatrix(count);
 	  		  count++;
 	  		  if(count==MAX_LED_MATRIX){count=0;
 	  		  shifted++;
-	  		  if(shifted>=8)shifted=0;
+
 	  		  }
 	  		  setTimer2(3);
 	  	  }

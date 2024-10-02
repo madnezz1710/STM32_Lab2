@@ -2224,3 +2224,274 @@ Finished building: STM32_Lab2.bin
  
 Finished building: STM32_Lab2.list
  
+16:39:04 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'updateLEDMatrix':
+../Core/Src/main.c:259:87: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+  259 |  uint8_t animation_matrix_buffer =(matrix_buffer[index]>>shifted||matrix_buffer[index]<<(8-shifted));
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Core/Src/main.c:259:10: warning: unused variable 'animation_matrix_buffer' [-Wunused-variable]
+  259 |  uint8_t animation_matrix_buffer =(matrix_buffer[index]>>shifted||matrix_buffer[index]<<(8-shifted));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:404:1: error: expected identifier or '(' before '}' token
+  404 | }
+      | ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:39:36 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'updateLEDMatrix':
+../Core/Src/main.c:259:87: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+  259 |  uint8_t animation_matrix_buffer =(matrix_buffer[index]>>shifted||matrix_buffer[index]<<(8-shifted));
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Core/Src/main.c:259:10: warning: unused variable 'animation_matrix_buffer' [-Wunused-variable]
+  259 |  uint8_t animation_matrix_buffer =(matrix_buffer[index]>>shifted||matrix_buffer[index]<<(8-shifted));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:404:1: error: expected identifier or '(' before '}' token
+  404 | }
+      | ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:39:58 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'updateLEDMatrix':
+../Core/Src/main.c:259:87: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+  259 |  uint8_t animation_matrix_buffer =(matrix_buffer[index]>>shifted||matrix_buffer[index]<<(8-shifted));
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Core/Src/main.c:259:10: warning: unused variable 'animation_matrix_buffer' [-Wunused-variable]
+  259 |  uint8_t animation_matrix_buffer =(matrix_buffer[index]>>shifted||matrix_buffer[index]<<(8-shifted));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+../Core/Src/main.c: At top level:
+../Core/Src/main.c:404:1: error: expected identifier or '(' before '}' token
+  404 | }
+      | ^
+make: *** [Core/Src/subdir.mk:37: Core/Src/main.o] Error 1
+"make -j16 all" terminated with exit code 2. Build might be incomplete.
+16:40:22 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'updateLEDMatrix':
+../Core/Src/main.c:259:87: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+  259 |  uint8_t animation_matrix_buffer =(matrix_buffer[index]>>shifted||matrix_buffer[index]<<(8-shifted));
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+../Core/Src/main.c:259:10: warning: unused variable 'animation_matrix_buffer' [-Wunused-variable]
+  259 |  uint8_t animation_matrix_buffer =(matrix_buffer[index]>>shifted||matrix_buffer[index]<<(8-shifted));
+      |          ^~~~~~~~~~~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+   text	   data	    bss	    dec	    hex	filename
+   9352	     48	   1672	  11072	   2b40	STM32_Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
+16:41:36 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'updateLEDMatrix':
+../Core/Src/main.c:259:87: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+  259 |  uint8_t animation_matrix_buffer =(matrix_buffer[index]>>shifted||matrix_buffer[index]<<(8-shifted));
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9336	     48	   1672	  11056	   2b30	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
+16:42:03 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'updateLEDMatrix':
+../Core/Src/main.c:259:87: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+  259 |  uint8_t animation_matrix_buffer =(matrix_buffer[index]>>shifted||matrix_buffer[index]<<(8-shifted));
+      |                                                                   ~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9340	     48	   1672	  11060	   2b34	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
+16:42:58 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'updateLEDMatrix':
+../Core/Src/main.c:259:89: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+  259 |  uint8_t animation_matrix_buffer =(matrix_buffer[index]>>shifted)||(matrix_buffer[index]<<(8-shifted));
+      |                                                                    ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9340	     48	   1672	  11060	   2b34	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
+16:43:43 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+../Core/Src/main.c: In function 'updateLEDMatrix':
+../Core/Src/main.c:259:89: warning: '<<' in boolean context, did you mean '<' ? [-Wint-in-bool-context]
+  259 |  uint8_t animation_matrix_buffer =(matrix_buffer[index]>>shifted)||(matrix_buffer[index]<<(8-shifted));
+      |                                                                    ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+   text	   data	    bss	    dec	    hex	filename
+   9340	     48	   1672	  11060	   2b34	STM32_Lab2.elf
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
+16:44:40 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9336	     48	   1672	  11056	   2b30	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
+16:46:11 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9340	     48	   1672	  11060	   2b34	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
+16:46:32 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9336	     48	   1672	  11056	   2b30	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
+16:47:22 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9336	     48	   1672	  11056	   2b30	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 
+16:48:09 **** Incremental Build of configuration Debug for project STM32_Lab2 ****
+make -j16 all 
+arm-none-eabi-gcc "../Core/Src/main.c" -mcpu=cortex-m3 -std=gnu11 -g3 -DDEBUG -DUSE_HAL_DRIVER -DSTM32F103x6 -c -I../Core/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc -I../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy -I../Drivers/CMSIS/Device/ST/STM32F1xx/Include -I../Drivers/CMSIS/Include -O0 -ffunction-sections -fdata-sections -Wall -fstack-usage -MMD -MP -MF"Core/Src/main.d" -MT"Core/Src/main.o" --specs=nano.specs -mfloat-abi=soft -mthumb -o "Core/Src/main.o"
+arm-none-eabi-gcc -o "STM32_Lab2.elf" @"objects.list"   -mcpu=cortex-m3 -T"C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\STM32F103C6UX_FLASH.ld" --specs=nosys.specs -Wl,-Map="STM32_Lab2.map" -Wl,--gc-sections -static --specs=nano.specs -mfloat-abi=soft -mthumb -Wl,--start-group -lc -lm -Wl,--end-group
+Finished building target: STM32_Lab2.elf
+ 
+arm-none-eabi-size   STM32_Lab2.elf 
+arm-none-eabi-objdump -h -S  STM32_Lab2.elf  > "STM32_Lab2.list"
+arm-none-eabi-objcopy  -O ihex  STM32_Lab2.elf  "STM32_Lab2.hex"
+   text	   data	    bss	    dec	    hex	filename
+   9352	     48	   1672	  11072	   2b40	STM32_Lab2.elf
+arm-none-eabi-objcopy  -O binary  STM32_Lab2.elf  "STM32_Lab2.bin"
+Finished building: default.size.stdout
+ 
+Finished building: STM32_Lab2.hex
+Finished building: STM32_Lab2.bin
+ 
+ 
+Finished building: STM32_Lab2.list
+ 

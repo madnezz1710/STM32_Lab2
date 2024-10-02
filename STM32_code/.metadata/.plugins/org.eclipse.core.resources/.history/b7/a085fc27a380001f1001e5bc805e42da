@@ -256,7 +256,7 @@ void clearCol(){
 }
 void updateLEDMatrix(int index,uint8_t shifted){
 	clearRow();
-	uint8_t	animation_matrix_buffer =(matrix_buffer[index]<<(8-shifted)) | (matrix_buffer[index]>>shifted);
+	uint8_t	animation_matrix_buffer =(matrix_buffer[index]>>shifted) | (matrix_buffer[index]<<(8-shifted));
 	switch(index){
 	case 0:
 		setCol(animation_matrix_buffer);
@@ -391,7 +391,7 @@ int count =0;
 	  		  count++;
 	  		  if(count==MAX_LED_MATRIX){count=0;
 	  		  shifted++;
-	  		  if(shifted>=8)shifted=0;
+
 	  		  }
 	  		  setTimer2(3);
 	  	  }
