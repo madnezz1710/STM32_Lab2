@@ -2795,3 +2795,38 @@
 2024-10-02 13:44:03,712 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 3402mS.
 2024-10-02 13:44:03,713 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
 2024-10-02 13:44:03,715 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
+2024-10-02 14:04:03,568 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 949843472 Bytes (1073741824)
+2024-10-02 14:04:04,467 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 870624352 Bytes (1073741824)
+2024-10-02 14:04:05,957 [INFO] UtilMem:74 - End SaveConfig() Used Memory: 861822784 Bytes (1073741824)
+2024-10-02 14:04:06,184 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: NVIC
+2024-10-02 14:04:06,184 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: SYS
+2024-10-02 14:04:06,184 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: GPIO
+2024-10-02 14:04:06,184 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: RCC
+2024-10-02 14:04:06,185 [INFO] BlockDiagram:2740 - set Specific Code input for plugin: TIM1_8F1
+2024-10-02 14:04:06,185 [INFO] CodeGenerator:663 - code generatio: config db path: C:\ST\STM32CubeIDE_1.7.0\STM32CubeIDE\plugins\com.st.stm32cube.common.mx_6.3.0.202107141111\\db\
+2024-10-02 14:04:06,437 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\MXTmpFiles\license.tmp_save
+2024-10-02 14:04:06,514 [INFO] CodeEngine:257 - Generated code: C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\MXTmpFiles\license.tmp
+2024-10-02 14:04:06,560 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\MXTmpFiles\gpio.tmp_save
+2024-10-02 14:04:06,628 [INFO] CodeEngine:257 - Generated code: C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\MXTmpFiles\gpio.tmp
+2024-10-02 14:04:06,734 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\Core\Src\stm32f1xx_it.c_save
+2024-10-02 14:04:06,803 [INFO] CodeEngine:257 - Generated code: C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\Core\Src\stm32f1xx_it.c
+2024-10-02 14:04:06,807 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\Core\Inc\stm32f1xx_it.h_save
+2024-10-02 14:04:06,855 [INFO] CodeEngine:257 - Generated code: C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\Core\Inc\stm32f1xx_it.h
+2024-10-02 14:04:06,868 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\Core\Src\stm32f1xx_hal_msp.c_save
+2024-10-02 14:04:06,945 [INFO] CodeEngine:257 - Generated code: C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\Core\Src\stm32f1xx_hal_msp.c
+2024-10-02 14:04:06,947 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\MXTmpFiles\system.tmp_save
+2024-10-02 14:04:06,993 [INFO] CodeEngine:257 - Generated code: C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\MXTmpFiles\system.tmp
+2024-10-02 14:04:07,003 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\Core\Inc\stm32f1xx_hal_conf.h_save
+2024-10-02 14:04:07,072 [INFO] CodeEngine:257 - Generated code: C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\Core\Inc\stm32f1xx_hal_conf.h
+2024-10-02 14:04:07,083 [WARN] IPConfigManager:3148 - IP not found : TIM
+2024-10-02 14:04:07,084 [WARN] CodeGenerator:3268 - IP not found : null
+2024-10-02 14:04:07,094 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\Core\Inc\main.h_save
+2024-10-02 14:04:07,147 [INFO] CodeEngine:257 - Generated code: C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\Core\Inc\main.h
+2024-10-02 14:04:07,155 [INFO] CodeEngine:239 - oldGeneratedFile, C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\Core\Src\main.c_save
+2024-10-02 14:04:07,273 [INFO] CodeEngine:257 - Generated code: C:\Users\itzic\Desktop\baitapxaml\VXL\Git_Lab2\STM32_code\STM32_Lab2\Core\Src\main.c
+2024-10-02 14:04:07,927 [INFO] ProjectBuilder:2578 - Time for Copy HAL[1] : 40mS.
+2024-10-02 14:04:07,929 [INFO] ProjectBuilder:3622 - Project Generator version: 3.14.1
+2024-10-02 14:04:08,626 [INFO] ConfigFileManager:1271 - The Die is : DIE412
+2024-10-02 14:04:10,505 [INFO] ProjectBuilder:3789 - Time for Generating toolchain IDE Files: 2576mS.
+2024-10-02 14:04:10,506 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 1mS.
+2024-10-02 14:04:10,508 [INFO] ProjectBuilder:2457 - Time for Copy CMSIS : 0mS.
