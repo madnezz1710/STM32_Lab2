@@ -19,10 +19,10 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
-#include "software_timer.h"
+
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
-
+#include "software_timer.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -219,24 +219,74 @@ int TIMER0_CYCLE=10;
 	}
 const int MAX_LED_MATRIX=8;
 int index_led_matrix=0;
-uint8_t matrix_buffer[8]={0x01,0x02,0x03,0x04,0x05,0x06,0x07,0x08};
+uint8_t matrix_buffer[8]={0b11100111,0b11011011,0b10111101,0b10000001,0b10000001,0b10111101,0b10111101,0b10111101};
+void setCol(uint8_t value){
+	HAL_GPIO_WritePin(ENM0_GPIO_Port, ENM0_Pin, (value>>7)&0x01);
+	HAL_GPIO_WritePin(ENM1_GPIO_Port, ENM1_Pin, (value>>6)&0x01);
+	HAL_GPIO_WritePin(ENM2_GPIO_Port, ENM2_Pin, (value>>5)&0x01);
+	HAL_GPIO_WritePin(ENM3_GPIO_Port, ENM3_Pin, (value>>4)&0x01);
+	HAL_GPIO_WritePin(ENM4_GPIO_Port, ENM4_Pin, (value>>3)&0x01);
+	HAL_GPIO_WritePin(ENM5_GPIO_Port, ENM5_Pin, (value>>2)&0x01);
+	HAL_GPIO_WritePin(ENM6_GPIO_Port, ENM6_Pin, (value>>1)&0x01);
+	HAL_GPIO_WritePin(ENM7_GPIO_Port, ENM7_Pin, (value>>0)&0x01);
+
+}
+
+void clearRow(){
+	HAL_GPIO_WritePin(ROW0_GPIO_Port, ROW0_Pin, SET);
+	HAL_GPIO_WritePin(ROW1_GPIO_Port, ROW1_Pin, SET);
+	HAL_GPIO_WritePin(ROW2_GPIO_Port, ROW2_Pin, SET);
+	HAL_GPIO_WritePin(ROW3_GPIO_Port, ROW3_Pin, SET);
+	HAL_GPIO_WritePin(ROW4_GPIO_Port, ROW4_Pin, SET);
+	HAL_GPIO_WritePin(ROW5_GPIO_Port, ROW5_Pin, SET);
+	HAL_GPIO_WritePin(ROW6_GPIO_Port, ROW6_Pin, SET);
+	HAL_GPIO_WritePin(ROW7_GPIO_Port, ROW7_Pin, SET);
+
+}
+void clearCol(){
+	HAL_GPIO_WritePin(ENM0_GPIO_Port, ENM0_Pin, RESET);
+	HAL_GPIO_WritePin(ENM1_GPIO_Port, ENM1_Pin, RESET);
+	HAL_GPIO_WritePin(ENM2_GPIO_Port, ENM2_Pin, RESET);
+	HAL_GPIO_WritePin(ENM3_GPIO_Port, ENM3_Pin, RESET);
+	HAL_GPIO_WritePin(ENM4_GPIO_Port, ENM4_Pin, RESET);
+	HAL_GPIO_WritePin(ENM5_GPIO_Port, ENM5_Pin, RESET);
+	HAL_GPIO_WritePin(ENM6_GPIO_Port, ENM6_Pin, RESET);
+	HAL_GPIO_WritePin(ENM7_GPIO_Port, ENM7_Pin, RESET);
+}
 void updateLEDMatrix(int index){
+	clearRow();
 	switch(index){
 	case 0:
+		setCol(matrix_buffer[0]);
+		HAL_GPIO_WritePin(ROW0_GPIO_Port, ROW0_Pin, RESET);
 		break;
 	case 1:
+		setCol(matrix_buffer[1]);
+		HAL_GPIO_WritePin(ROW1_GPIO_Port, ROW1_Pin, RESET);
 		break;
 	case 2:
+		setCol(matrix_buffer[2]);
+		HAL_GPIO_WritePin(ROW2_GPIO_Port, ROW2_Pin, RESET);
 		break;
 	case 3:
+		setCol(matrix_buffer[3]);
+		HAL_GPIO_WritePin(ROW3_GPIO_Port, ROW3_Pin, RESET);
 		break;
 	case 4:
+		setCol(matrix_buffer[4]);
+		HAL_GPIO_WritePin(ROW4_GPIO_Port, ROW4_Pin, RESET);
 		break;
 	case 5:
+		setCol(matrix_buffer[5]);
+		HAL_GPIO_WritePin(ROW5_GPIO_Port, ROW5_Pin, RESET);
 		break;
 	case 6:
+		setCol(matrix_buffer[6]);
+		HAL_GPIO_WritePin(ROW6_GPIO_Port, ROW6_Pin, RESET);
 		break;
 	case 7:
+		setCol(matrix_buffer[7]);
+		HAL_GPIO_WritePin(ROW7_GPIO_Port, ROW7_Pin, RESET);
 		break;
 	default:
 		break;
@@ -279,11 +329,12 @@ HAL_TIM_Base_Start_IT(&htim2);
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
-setTimer1(100);
-setTimer2(100);
-setTimer0(1000);
+setTimer1(25);
+setTimer2(5);
+setTimer0(50);
 int state=0;
 int hour = 15 , minute = 59 , second = 50;
+int count =0;
   while (1)
   {
 	  if(timer0_flag==1){
@@ -309,13 +360,13 @@ int hour = 15 , minute = 59 , second = 50;
 	  			  update7SEG(index_led);
 	  			  index_led=1;
 	  			  state=1;
-	  			  setTimer1(100);
+	  			  setTimer1(25);
 	  		  break;
 	  		  case 1:
 	  			  update7SEG(index_led);
 	  			  index_led=2;
 	  			  state=2;
-	  			  setTimer1(100);
+	  			  setTimer1(25);
 	  			  break;
 	  		  default:
 	  			  break;
@@ -323,23 +374,21 @@ int hour = 15 , minute = 59 , second = 50;
 	  			  update7SEG(index_led);
 	  			  index_led=3;
 	  			  state=3;
-	  			  setTimer1(100);
+	  			  setTimer1(25);
 	  			  break;
 	  		  case 3:
 	  			  update7SEG(index_led);
 	  			  index_led=0;
 	  			  state=0;
-	  			  setTimer1(100);
+	  			  setTimer1(25);
 	  			  break;
 	  	  }
 	  	  }
 	  	  if(timer2_flag==1){
-	  		  setTimer2(100);
-	  		  HAL_GPIO_TogglePin(LED_RED_GPIO_Port, LED_RED_Pin);
-	  		  HAL_GPIO_TogglePin(ENM0_GPIO_Port, ENM0_Pin);
-	  		  HAL_GPIO_TogglePin(ENM1_GPIO_Port, ENM1_Pin);
-	  		  HAL_GPIO_TogglePin(ROW3_GPIO_Port, ROW3_Pin);
-	  		  HAL_GPIO_TogglePin(ROW4_GPIO_Port, ROW4_Pin);
+	  		  updateLEDMatrix(count);
+	  		  count++;
+	  		  if(count==8)count=0;
+	  		  setTimer2(3);
 	  	  }
     /* USER CODE END WHILE */
 
